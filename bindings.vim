@@ -10,7 +10,7 @@ nmap <silent> <leader>s :set nolist!<CR>
 " Ctrl-N to disable search match highlight
 nmap <silent> <C-N> :silent noh<CR>
 
-" Ctrol-E to switch between 2 last buffers
+" Ctrl-E to switch between 2 last buffers
 nmap <C-E> :b#<CR>
 
 " ,e to fast finding files. just type beginning of a name and hit TAB
@@ -63,11 +63,13 @@ nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<cr>
 
 " vim-tmux-navigator
 " for custom bindings uncomment 'tmux_navigator_no_mappings line in plugins.vim
-"nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
-"nnoremap <silent> <C-j> :TmuxNavigateDown<cr>
-"nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
-"nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
-"nnoremap <silent> <C-\> :TmuxNavigatePrevious<cr>
+nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <C-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
+nnoremap <silent> <C-\> :TmuxNavigatePrevious<cr>
 
 " fast expand current file's directory in command mode
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
+
+map <silent> <F11> :call system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")<CR>

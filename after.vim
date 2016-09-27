@@ -26,3 +26,14 @@ if has('gui_running')
     source ~/.gvimrc.after
   endif
 end
+
+set background=dark
+colorscheme OceanicNext
+
+""" SYSTEM CLIPBOARD COPY & PASTE SUPPORT
+set pastetoggle=<F2> "F2 before pasting to preserve indentation
+"Copy paste to/from clipboard
+vnoremap <C-c> "*y
+map <silent><Leader><S-p> :set paste<CR>o<esc>"*]p:set nopaste<cr>"
+
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>

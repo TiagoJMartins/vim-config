@@ -3,5 +3,8 @@
 if (exists("g:after_vim_loaded") && g:after_vim_loaded) || &cp
   finish
 endif
+
+colorscheme default
+
 let g:after_vim_loaded = 1
 source ~/.vim/after.vim

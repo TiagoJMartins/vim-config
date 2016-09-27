@@ -18,8 +18,6 @@ NeoBundle 'jistr/vim-nerdtree-tabs'
 NeoBundle 'scrooloose/nerdcommenter'
 " fuzzy file open
 NeoBundle 'kien/ctrlp.vim'
-" popup completion menu
-NeoBundle 'AutoComplPop'
 " tags list navigation
 NeoBundle 'taglist.vim'
 " yank history
@@ -28,8 +26,6 @@ NeoBundle 'YankRing.vim'
 NeoBundle 'tpope/vim-fugitive'
 " syntax checking on save
 NeoBundle 'scrooloose/syntastic'
-" TextMate-style snippets
-NeoBundle 'msanders/snipmate.vim'
 " manipulation of surraunding parens, quotes, etc.
 NeoBundle 'tpope/vim-surround'
 " vertical alignment tool
@@ -49,12 +45,8 @@ NeoBundle 'sjl/splice.vim'
 NeoBundle 'Indent-Guides'
 " end certain structures automatically, e.g. begin/end etc.
 NeoBundle 'tpope/vim-endwise'
-" automatic closing of quotes, parenthesis, brackets, etc.
-NeoBundle 'Raimondi/delimitMate'
 " calendar, duh!
 NeoBundle 'calendar.vim--Matsumoto'
-" A Narrow Region Plugin (similar to Emacs)
-"NeoBundle 'chrisbra/NrrwRgn'
 " url based hyperlinks for text files
 NeoBundle 'utl.vim'
 " A clone of Emacs' Org-mode for Vim
@@ -73,25 +65,17 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'editorconfig/editorconfig-vim'
 " tmux + vim = love
 NeoBundle 'christoomey/vim-tmux-navigator'
+" Throwaway scratch buffer
+NeoBundle 'duff/vim-scratch'
+" Smart end of line characters
+NeoBundle 'lfilho/cosco.vim'
+" Auto closing of pairs
+NeoBundle 'jiangmiao/auto-pairs'
+" Fucking amazing
+NeoBundle 'vimwiki/vimwiki'
+" Makes tab work with autocomplete and snippets
+NeoBundle 'ervandew/supertab'
 
-" Ruby/Rails
-
-" rails support
-NeoBundle 'tpope/vim-rails'
-" bundler integration (e.g. :Bopen)
-NeoBundle 'tpope/vim-bundler'
-" rake integration
-NeoBundle 'tpope/vim-rake'
-" A custom text object for selecting ruby blocks (ar/ir)
-NeoBundle 'nelstrom/vim-textobj-rubyblock'
-" ruby refactoring
-NeoBundle 'ecomba/vim-ruby-refactoring'
-" apidock.com docs integration
-NeoBundle 'apidock.vim'
-" toggle ruby blocks style
-NeoBundle 'vim-scripts/blockle.vim'
-" lightweight Rspec runner for Vim
-NeoBundle 'josemarluedke/vim-rspec'
 " i18n extraction plugin
 NeoBundle 'stefanoverna/vim-i18n'
 
@@ -99,6 +83,11 @@ NeoBundle 'stefanoverna/vim-i18n'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'tpope/vim-vividchalk'
 NeoBundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+NeoBundle 'rakr/vim-one'
+NeoBundle 'junegunn/seoul256.vim'
+NeoBundle 'jnurmine/Zenburn'
+NeoBundle 'jonathanfilip/vim-lucius'
+NeoBundle 'mhartington/oceanic-next'
 
 " syntax support
 NeoBundle 'vim-ruby/vim-ruby'

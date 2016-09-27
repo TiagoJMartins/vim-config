@@ -15,7 +15,8 @@ let g:syntastic_warning_symbol='⚠'
 
 " delimitMate
 let g:delimitMate_expand_space = 1 " Turns on/off the expansion of <Space>
-let g:delimitMate_expand_cr = 1    " Turns on/off the expansion of <CR>
+let g:delimitMate_expand_cr = 2    " Turns on/off the expansion of <CR>
+let g:delimitMate_jump_expansion = 1 " Turns on jumping over expansions
 
 " nerdtree
 " Ctrl-P to Display the file browser tree
@@ -117,6 +118,11 @@ let g:indent_guides_start_level = 2
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_guide_size = 1
 let g:indent_guides_color_change_percent = 5
+let g:indent_guides_auto_colors = 0
+
+" Indent guides style
+hi IndentGuidesOdd  ctermbg=black
+hi IndentGuidesEven ctermbg=darkgrey
 
 " VimClojure
 let g:vimclojure#ParenRainbow = 1
@@ -162,8 +168,10 @@ map <Leader>r :call RunNearestSpec()<CR>
 
 " vim-airline
 let g:airline_powerline_fonts=1
-let g:airline_theme='light' " dark simple badwolf solarized solarized2
+let g:airline_theme='bubblegum' " dark simple badwolf solarized solarized2
 set noshowmode
 
 " uncomment to define your own bindings for tmux-vim-navigator
 "let g:tmux_navigator_no_mappings = 1
+
+let g:jsx_ext_required = 0

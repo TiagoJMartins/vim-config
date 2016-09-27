@@ -2,9 +2,10 @@
 set nocompatible
 syntax on
 filetype plugin indent on
+set t_Co=256
 
 " prevent vim from adding that stupid empty line at the end of every file
-set noeol
+" set noeol
 set binary
 
 " utf-8/unicode support
@@ -29,6 +30,9 @@ set laststatus=2        " always show the status line
 "set listchars=tab:▷⋅,trail:·,eol:$
 set listchars=tab:▷⋅,trail:·
 set list
+
+" Trigger autoread when changing buffers or coming back to vim in terminal.
+au FocusGained,BufEnter * :silent! !
 
 " highlight spell errors
 hi SpellErrors guibg=red guifg=black ctermbg=red ctermfg=black
@@ -68,6 +72,39 @@ set incsearch           " Incremental search
 set hlsearch            " Highlight search match
 set ignorecase          " Do case insensitive matching
 set smartcase           " do not ignore if search pattern has CAPS
+set gdefault
+
+set splitbelow
+set splitright
+
+set winwidth=104
+set winheight=5
+set winminheight=5
+set winheight=999
+
+set matchpairs+=<:>
+
+let g:html_indent_tags = 'li\|p'
+
+set scrolloff=8         "Start scrolling when we're 8 lines away from margins
+set sidescrolloff=15
+set sidescroll=1"
+
+set number
+set relativenumber
+
+" Quicker window movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
+" Use tab to jump between blocks, because it's easier
+nnoremap <tab> %
+vnoremap <tab> %
+
+autocmd FileType javascript,css nmap <silent> <Leader>; <Plug>(cosco-commaOrSemiColon)
+autocmd FileType javascript,css imap <silent> <Leader>; <c-o><Plug>(cosco-commaOrSemiColon)
 
 " omni completion settings
 set ofu=syntaxcomplete#Complete
