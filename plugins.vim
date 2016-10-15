@@ -171,7 +171,9 @@ let g:airline_powerline_fonts=1
 let g:airline_theme='bubblegum' " dark simple badwolf solarized solarized2
 set noshowmode
 
+let g:used_javascript_libs = 'jquery,underscore,angularjs,react,flux,requirejs,chai,ramda'
+
 " uncomment to define your own bindings for tmux-vim-navigator
 "let g:tmux_navigator_no_mappings = 1
 
-let g:jsx_ext_required = 0
+let g:jsx_ext_required = 1

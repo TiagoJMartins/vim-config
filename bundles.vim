@@ -22,6 +22,7 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'taglist.vim'
 " yank history
 NeoBundle 'YankRing.vim'
+
 " git integration
 NeoBundle 'tpope/vim-fugitive'
 " syntax checking on save
@@ -75,9 +76,10 @@ NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'vimwiki/vimwiki'
 " Makes tab work with autocomplete and snippets
 NeoBundle 'ervandew/supertab'
-
 " i18n extraction plugin
 NeoBundle 'stefanoverna/vim-i18n'
+" Auto completion
+NeoBundle 'Valloric/YouCompleteMe'
 
 " color themes
 NeoBundle 'altercation/vim-colors-solarized'
@@ -144,12 +146,16 @@ NeoBundle 'Shougo/vimproc.vim', {
 \     'cygwin' : 'make -f make_cygwin.mak',
 \     'mac' : 'make -f make_mac.mak',
 \     'linux' : 'make',
-\     'unix' : 'gmake',
+\     'unix' : 'make -f make_unix.mak',
 \    },
 \ }
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/unite-outline'
 NeoBundle 'ujihisa/unite-colorscheme'
+
+NeoBundle 'othree/javascript-libraries-syntax.vim'
+
+NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
 
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
