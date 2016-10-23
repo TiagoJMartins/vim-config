@@ -27,7 +27,7 @@ NeoBundle 'YankRing.vim'
 NeoBundle 'tpope/vim-fugitive'
 " syntax checking on save
 NeoBundle 'scrooloose/syntastic'
-" manipulation of surraunding parens, quotes, etc.
+" manipulation of surrounding parens, quotes, etc.
 NeoBundle 'tpope/vim-surround'
 " vertical alignment tool
 NeoBundle 'tsaleh/vim-align'
@@ -90,6 +90,8 @@ NeoBundle 'junegunn/seoul256.vim'
 NeoBundle 'jnurmine/Zenburn'
 NeoBundle 'jonathanfilip/vim-lucius'
 NeoBundle 'mhartington/oceanic-next'
+NeoBundle 'kristijanhusak/vim-hybrid-material'
+NeoBundle 'jdkanani/vim-material-theme'
 
 " syntax support
 NeoBundle 'vim-ruby/vim-ruby'
@@ -154,6 +156,8 @@ NeoBundle 'Shougo/unite-outline'
 NeoBundle 'ujihisa/unite-colorscheme'
 
 NeoBundle 'othree/javascript-libraries-syntax.vim'
+
+NeoBundle 'ap/vim-buftabline'
 
 NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
 

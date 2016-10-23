@@ -28,7 +28,8 @@ if has('gui_running')
 end
 
 set background=dark
-colorscheme OceanicNext
+colorscheme monokai
+let g:enable_bold_font = 1
 
 """ SYSTEM CLIPBOARD COPY & PASTE SUPPORT
 set pastetoggle=<F2> "F2 before pasting to preserve indentation
