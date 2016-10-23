@@ -76,8 +76,6 @@ NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'vimwiki/vimwiki'
 " Makes tab work with autocomplete and snippets
 NeoBundle 'ervandew/supertab'
-" i18n extraction plugin
-NeoBundle 'stefanoverna/vim-i18n'
 " Auto completion
 NeoBundle 'Valloric/YouCompleteMe'
 
