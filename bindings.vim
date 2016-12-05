@@ -5,16 +5,16 @@ map Q gq
 nnoremap Y y$
 
 " toggle highlight trailing whitespace
-nmap <silent> <leader>s :set nolist!<CR>
+nmap <silent> <Leader>s :set nolist!<CR>
 
 " Ctrl-N to disable search match highlight
 nmap <silent> <C-N> :silent noh<CR>
 
 " Ctrl-E to switch between 2 last buffers
-nmap <C-E> :b#<CR>
+nmap <C-E> :b#<CR> 
 
 " ,e to fast finding files. just type beginning of a name and hit TAB
-nmap <leader>e :e **/
+nmap <Leader>e :e **/
 
 " Make shift-insert work like in Xterm
 map <S-Insert> <MiddleMouse>
@@ -60,6 +60,10 @@ nnoremap - <C-x>
 
 " remove trailing spaces
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<cr>
+
+" Quickly open/reload vim
+nnoremap <leader>ev :split $MYVIMRC<CR>
+nnoremap <leader>sv :source $MYVIMRC<CR>
 
 " vim-tmux-navigator
 " for custom bindings uncomment 'tmux_navigator_no_mappings line in plugins.vim

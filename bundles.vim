@@ -114,6 +114,7 @@ NeoBundle 'vitaly/vim-literate-coffeescript'
 NeoBundle 'rust-lang/rust', {'rtp': 'src/etc/vim/'}
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'mxw/vim-jsx'
+NeoBundle 'leafgarland/typescript-vim'
 
 " clojure
 "NeoBundle 'VimClojure'
