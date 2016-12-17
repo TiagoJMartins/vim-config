@@ -90,6 +90,7 @@ NeoBundle 'jonathanfilip/vim-lucius'
 NeoBundle 'mhartington/oceanic-next'
 NeoBundle 'kristijanhusak/vim-hybrid-material'
 NeoBundle 'jdkanani/vim-material-theme'
+NeoBundle 'tyrannicaltoucan/vim-quantum'
 
 " syntax support
 NeoBundle 'vim-ruby/vim-ruby'

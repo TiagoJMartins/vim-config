@@ -168,7 +168,7 @@ map <Leader>r :call RunNearestSpec()<CR>
 
 " vim-airline
 let g:airline_powerline_fonts=1
-let g:airline_theme='bubblegum' " dark simple badwolf solarized solarized2
+let g:airline_theme='quantum' " dark simple badwolf solarized solarized2
 set noshowmode
 
 let g:used_javascript_libs = 'jquery,underscore,angularjs,react,flux,requirejs,chai,ramda'
