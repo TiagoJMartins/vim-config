@@ -166,6 +166,9 @@ call unite#filters#matcher_default#use(['matcher_fuzzy'])
 " vim-rspec
 map <Leader>r :call RunNearestSpec()<CR>
 
+" Documentation
+map <Leader>dc :JsDoc<CR>
+
 " vim-airline
 let g:airline_powerline_fonts=1
 let g:airline_theme='quantum' " dark simple badwolf solarized solarized2

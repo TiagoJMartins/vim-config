@@ -4,5 +4,5 @@ if has("mac")
 endif
 
 let g:enable_bold_font = 1
-let g:quantum_black = 1
+let g:quantum_black = 0
 let g:quantum_italics = 1
