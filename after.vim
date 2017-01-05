@@ -28,7 +28,7 @@ if has('gui_running')
 end
 
 set background=dark
-colorscheme quantum
+colorscheme monokai
 
 """ SYSTEM CLIPBOARD COPY & PASTE SUPPORT
 set pastetoggle=<F2> "F2 before pasting to preserve indentation
